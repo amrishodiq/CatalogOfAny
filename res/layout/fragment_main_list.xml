@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DDDDDD"
+    tools:context=".MainActivity$DummySectionFragment" >
+
+    <ListView 
+        android:id="@+id/main_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        >
+    </ListView>
+    <TextView android:id="@+id/empty_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="@dimen/activity_subtitle"
+	    android:padding="@dimen/activity_horizontal_padding"
+	    android:layout_margin="@dimen/activity_horizontal_padding"
+	    android:background="#FFBB33"
+	    android:text="@string/empty_item_tutorial" />
+
+    <ImageButton 
+        android:id="@+id/add_item_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/button_add_item_padding"
+        android:src="@drawable/content_new"/>
+    
+</LinearLayout>
